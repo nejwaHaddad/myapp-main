@@ -18,7 +18,7 @@ import  JavaS  from "./pages/javascript";
 
 const router = createBrowserRouter([
   {
-    //To go in page Home 
+    //To go in page home
   path: "/",
   element: <Home />,
   errorElement: <h1>SORRY................</h1>,
