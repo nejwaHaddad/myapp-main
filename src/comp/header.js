@@ -1,15 +1,21 @@
+import { NavLink, Link } from "react-router";
 
 const Header = () => {
   return (
     <div>
-        <header className="hide-when-mobile">
-        <h1>c4a</h1>
+      <header className="hide-when-mobile">
+        <h1>
+<Link to="/"> c4a
+        </Link>
+
+        </h1>
+        
         <ul className="flex">
           <li className="main-list">
-            <a className="main-link" href="/html">
+            <NavLink className="main-link" to="/html">
               HTML{" "}
-            </a>
-          {/*   <ul className="sub-ul">
+            </NavLink>
+            {/*   <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
               </li>
@@ -22,9 +28,9 @@ const Header = () => {
             </ul>*/}
           </li>
           <li className="main-list">
-            <a className="main-link" href="/css">
+            <NavLink className="main-link" to="/css">
               CSS{" "}
-            </a>
+            </NavLink>
             {/*  <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -49,10 +55,10 @@ const Header = () => {
             </ul>*/}
           </li>
           <li className="main-list">
-            <a className="main-link" href="javascript">
+            <NavLink className="main-link" to="javascript">
               JavaScript{" "}
-            </a>
-          {/*    <ul className="sub-ul sub-of-js">
+            </NavLink>
+            {/*    <ul className="sub-ul sub-of-js">
               <li>
                 <a href="">coming soon🔥</a>
               </li>
@@ -129,9 +135,8 @@ const Header = () => {
           </div>
         </div>
       </header>*/}
-
     </div>
   );
-}
+};
 
 export default Header;
